@@ -20,5 +20,14 @@ btn3.pack()
 btn4 = Button(root, width=10, height=3, text="버튼3")
 btn4.pack()
 
+label1 = Label(root, text="안녕하세요")
+label1.pack()
+
+def change():
+    label1.config(text="또 만나요")
+
+btn = Button(root, text="클릭", command=change)
+btn.pack()
+
 # 창 고정
 root.mainloop()
